@@ -17,7 +17,10 @@ public class Programa {
 			Integer id = sc.nextInt();
 			System.out.println("digite o salario do funcionario");
 			Double salario = sc.nextDouble();
-			data dados = new data(nome,id,salario);
+			System.out.println("digite o cpf do funcionario");
+			String cpf = sc.next();
+			
+			data dados = new data(nome,id,salario,cpf);
 			lista.add(dados);	
 		}
 		System.out.println("insira o id do funcionario que terá o salario aumentado");
