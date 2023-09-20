@@ -23,7 +23,7 @@ public class Programa {
 			data dados = new data(nome,id,salario,cpf);
 			lista.add(dados);	
 		}
-		System.out.println("insira o id do funcionario que terá o salario aumentado");
+		System.out.println("insira o id do funcionario que terá o salário aumentado");
 		int idsalario = sc.nextInt();
 		data empregado = lista.stream().filter(x -> x.id == idsalario).findFirst().orElse(null);
 			System.out.print("Enter the percentage: ");
